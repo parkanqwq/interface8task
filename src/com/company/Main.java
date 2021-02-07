@@ -17,12 +17,16 @@ public class Main {
 
         System.out.println();
         createArr();
+        Beggin();
+        Act();
+    }
+
+    private static void Beggin() {
         System.out.println("Будем бегать и прыгать");
         for (int i = 1; i < 7; i=i+2) {
             System.out.println("пробежать " + obstacles[i-1].hard());
             System.out.println("перепрыгнуть " + obstacles[i].hard());
         }
-        Act();
     }
 
     private static void Act(){
